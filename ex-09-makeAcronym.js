@@ -9,8 +9,18 @@
 // ++ Write YOUR CODE Below
 
 
+function makeAcronym(string){
+    var finalResult = string.charAt(0);
+    for (var i = 0; i < string.length; i++){
+        var spaceFinder = string[i];
 
-
+        if(spaceFinder === " "){
+            finalResult += string.charAt(i+1)
+        } 
+    }
+    var finalText = finalResult.toUpperCase();
+    return finalText;
+}
 
 
 // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
