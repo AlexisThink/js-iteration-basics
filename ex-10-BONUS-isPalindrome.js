@@ -11,7 +11,20 @@
 
 // ++ Write YOUR CODE below
 
+function isPalindrome(string){
+    var newArray = Array.from(string);
+    var finalWord="";
+    var endStart = newArray.length - 1;
 
+    for (var i = endStart; i >= 0; i--){
+        finalWord += newArray[i];
+    }
+    if (finalWord === string){
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 
